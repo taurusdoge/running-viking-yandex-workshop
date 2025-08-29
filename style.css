@@ -1,14 +1,26 @@
 body,
 html {
   margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  min-width: 100vw;
+  min-height: 100vh;
+  box-sizing: border-box;
 }
 
 .frame {
-  width: 800px;
-  height: 600px;
+  width: 100vw;
+  height: 100vh;
+  min-width: 100vw;
+  min-height: 100vh;
   position: relative;
   background: #fcebd5;
   --animation: 1s ease infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
 .frame *,
@@ -30,8 +42,7 @@ html {
 }
 
 .viking {
-  top: 190px;
-  left: 350px;
+  position: relative;
   width: 61px;
   height: 164px;
   background: linear-gradient(-22deg, #ca9a4d 30%, #86642c 0%);
